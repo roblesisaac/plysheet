@@ -5,10 +5,15 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var lessMiddleware = require('less-middleware');
+var mongoose = require('mongoose');
 
 var index = require('./routes/index');
 
 var app = express();
+
+// configuration
+mongoose.Promise = global.Promise;
+mongoose.connect('mongodb://127.0.0.1:27017/plySheet'); // connect to database
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
