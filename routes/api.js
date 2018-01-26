@@ -4,7 +4,7 @@ var auth = require('./auth');
 var restful = require('node-restful');
 var mongoose = restful.mongoose;
 var collections = {};
-var models = ['images', 'sheets', 'tmplts', 'users', 'sites'];
+var models = ['sheets', 'tmplts', 'sites'];
 
 for (var i = 0; i < models.length; i++) collections[models[i]] = require('../models/' + models[i]);
 
