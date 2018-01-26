@@ -12,6 +12,7 @@
     "express": "~4.15.5",
     "hjs": "~0.0.6",
     "less-middleware": "~2.2.1",
+    "mongoose": "^5.0.1",
     "morgan": "~1.9.0",
     "node-restful": "^0.2.6",
     "serve-favicon": "~2.4.5"
