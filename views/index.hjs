@@ -29,7 +29,7 @@
     <!--<script src="http://plysheet.com/{{ url }}/scripts/tmplts"></script>-->
     <!--<script src="http://plysheet.com/plysheet/scripts/apps"></script>-->
     <!--<script src="http://plysheet.com/plysheet/scripts/main"></script>-->
-    <script src="js/main.js"></script>
+    <script src="http://plysheet.com/plysheet/scripts/new"></script>
     
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.3/ace.js"></script>
     
