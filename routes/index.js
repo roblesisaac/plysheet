@@ -13,7 +13,6 @@ router.get('/', function(req, res, next) {
     } 
     res.render('index', { 
       title: 'Express',
-      partials: {nav: 'nav'},
       tmplts: tmplts
     });
   });
