@@ -8,7 +8,7 @@ var lessMiddleware = require('less-middleware');
 var mongoose = require('mongoose');
 
 var index = require('./routes/index');
-// var api = require('./routes/api');
+var api = require('./routes/api');
 
 var app = express();
 
