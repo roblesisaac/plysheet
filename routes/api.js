@@ -8,6 +8,8 @@ var models = ['sheets', 'users', 'sites'];
 
 for (var i = 0; i < models.length; i++) collections[models[i]] = require('../models/' + models[i]);
 
+collections.users.methods(['get', 'put', 'post', 'delete']);
+collections.users.register(router, 'users');
 
 
 
