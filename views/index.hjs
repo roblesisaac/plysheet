@@ -30,7 +30,7 @@
     </div>
     
     <script type="text/javascript">
-      console.log({{ partials }});
+      console.log({{{ partials }}});
     </script>
    
     <script src="http://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
