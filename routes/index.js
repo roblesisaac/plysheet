@@ -9,7 +9,7 @@ router.get('/tmplts', function(req, res, next) {
     for (i=0; i<data.length; i++) {
       tmplts[data[i].slice(0,-4)] = fs.readFileSync('views/partials/' + data[i], 'utf8');
     } 
-    res.end('var tmplts = '+tmplts);
+    res.end('var tmplts = '+JSON.stringify(tmplts));
   });
 });
 
