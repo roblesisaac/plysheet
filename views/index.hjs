@@ -24,14 +24,10 @@
       </div>
       <div class="off-canvas-content expandY" data-off-canvas-content>
         <ply-login></ply-login>
-        {{{ tmplts }}}
-        {{ partials }}
       </div>
     </div>
     
-    <script type="text/javascript">
-      console.log({{{ partials }}});
-    </script>
+    <script src="/tmplts"></script>
    
     <script src="http://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/6.23.0/polyfill.min.js"></script>
