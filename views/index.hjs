@@ -24,7 +24,7 @@
       </div>
       <div class="off-canvas-content expandY" data-off-canvas-content>
         <ply-login></ply-login>
-        {{ tmplts }}
+        {{{ tmplts }}}
         {{ partials }}
       </div>
     </div>
