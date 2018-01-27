@@ -21,23 +21,9 @@
   <body>
     <div id="app" class="off-canvas-wrapper">
       <div class="off-canvas position-right bgBleach" id="offCanvas" data-off-canvas>
-        <!--<ply-links a_classes="displayBlock pad15 capitalize bold" :site="_self" offcanvas="true"></ply-links>-->
       </div>
       <div class="off-canvas-content expandY" data-off-canvas-content>
         <ply-login></ply-login>
-        <!--<ply-nav v-show="component.name !== 'ply-print'" :site="_self" id="plyNav" :class="['fixed top0 expandX bgBleach', {isScrolled: scrolled}]">-->
-        <!--  <button type="button" class="button hide show-for-small-only" data-toggle="offCanvas" id="plyToggle">-->
-        <!--    <h1 class="fi-list marginNone"></h1>-->
-        <!--  </button>-->
-        <!--</ply-nav>-->
-        <!--<ply-progress v-show="component.name !== 'ply-print'" :progress="progress"></ply-progress>-->
-        <!--<transition name="slide-fade">-->
-        <!--  <ply-notify v-show="component.name !== 'ply-print'" v-if="notify !== false"></ply-notify>-->
-        <!--</transition>-->
-        <!--<div id="plyBody" class="grid-x flatten">-->
-          <!--<component v-if="component.name" :is="component.name" v-bind="component.props"></component>-->
-          <!--<ply-panel v-show="component.name !== 'ply-print'" v-if="panels && route && route.layout" v-for="(layout, i) in route.layout" :key="layout._id" :i='i' :site="_self" :layout="layout" classes="layout.classes"></ply-panel>-->
-        <!--</div>-->
       </div>
     </div>
    
