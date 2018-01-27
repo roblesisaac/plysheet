@@ -19,8 +19,12 @@
   </head>
 
   <body>
-    <h1>Welcome</h1>
-    <ply-login></ply-login>
+    <div id="app" class="grid-x">
+      <div class="cell small-12">
+        <h1>Welcome</h1>
+        <ply-login></ply-login>
+      </div>
+    </div>
    
     <script src="http://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/6.23.0/polyfill.min.js"></script>
