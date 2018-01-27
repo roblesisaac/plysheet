@@ -13,7 +13,7 @@ router.get('/',function(req, res) {
 });
 
 collections.users.methods(['get', 'put', 'post', 'delete']);
-collections.users.register(router, 'users');
+collections.users.register(router, '/users');
 
 
 
