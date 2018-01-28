@@ -8,7 +8,7 @@ var models = ['sheets', 'users', 'sites'];
 
 for (var i = 0; i < models.length; i++) collections[models[i]] = require('../models/' + models[i]);
 
-router.get('/',function(req, res) {
+router.get('/api',function(req, res) {
   res.json({message: 'Api working!'});
 });
 
