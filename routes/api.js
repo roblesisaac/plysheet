@@ -13,10 +13,6 @@ router.get('/api',function(req, res) {
 });
 
 collections.users.methods(['get', 'put', 'post', 'delete'])
-.before('post', function(req, res) {
-  res.send('posting a new user');
-  next();
-})
 .register(router, '/users');
 
 
