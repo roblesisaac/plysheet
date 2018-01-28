@@ -12,8 +12,8 @@ router.get('/api',function(req, res) {
   res.json({message: 'Api working!'});
 });
 
-collections.users.methods(['get', 'put', 'post', 'delete']);
-collections.users.register(router, '/users');
+collections.users.methods(['get', 'put', 'post', 'delete'])
+.register(router, '/users');
 
 
 
