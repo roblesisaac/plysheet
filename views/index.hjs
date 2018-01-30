@@ -24,8 +24,6 @@
       </div>
       <div class="off-canvas-content expandY" data-off-canvas-content>
         <ply-login></ply-login>
-        <br>
-        <h1>{{ height }}px</h1>
       </div>
     </div>
     
