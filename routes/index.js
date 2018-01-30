@@ -16,7 +16,7 @@ router.get('/tmplts', function(req, res, next) {
 
 
 router.get('/test', function(req, res){
-  res.end("console.log('hi')")
+  res.end("console.log(ply)")
 });
 
 /* GET home page. */
