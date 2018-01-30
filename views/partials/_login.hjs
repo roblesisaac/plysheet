@@ -1,5 +1,4 @@
 <div>
-  <h1>{{ global.name }}</h1>
   <input type="text" v-model="username">
   <br>
   <input type="password" v-model="password">
