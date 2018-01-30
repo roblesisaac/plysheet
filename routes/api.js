@@ -13,6 +13,10 @@ router.get('/api',function(req, res) {
 });
 
 collections.users.methods(['get', 'put', 'post', 'delete'])
+.before('post', function(req, res, next){
+  res.send('working now');
+  next();
+})
 .register(router, '/users');
 
 
