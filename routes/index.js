@@ -16,7 +16,7 @@ router.get('/tmplts', function(req, res, next) {
 
 
 router.get('/test', function(req, res){
-  res.end("ply.sheet ['ply-login'] = {data: function {} {return {username: '', password: '', ply: ply};}, methods: {login: function .post ('/ users', {username: this.username, password: this.password}) .this (function (res) {console.log (res.data)}};}}, template: tmplts._login , watch: {'ply.name': function () {console.log ('changed to' + ply.name);}}} for {var sheet in ply.sheet} {var vue = ply.sheet [sheet] ; delete vue.name; Vue.component (sheet, vue);} ")
+  res.end("ply.sheet['ply-login'] = {\n  data: function() {\n    return {\n      username: '',\n      password: '',\n      ply: ply\n    };\n  },\n  methods: {\n    login: function() {\n      axios.post('/users', {username: this.username, password: this.password}).then(function(res){\n        console.log(res.data);\n      });\n    }\n  },\n  template: tmplts._login,\n  watch: {\n    'ply.name': function() {\n      console.log('changed to '+ply.name);\n    }\n  }  \n}\n\nfor(var sheet in ply.sheet) {\n  var vue = ply.sheet[sheet];\n  delete vue.name;\n  Vue.component(sheet, vue);\n}")
 });
 
 /* GET home page. */
