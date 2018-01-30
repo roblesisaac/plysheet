@@ -19,6 +19,7 @@
   </head>
 
   <body>
+    {{ ply }}
     <div id="app" class="off-canvas-wrapper">
       <div class="off-canvas position-right bgBleach" id="offCanvas" data-off-canvas>
       </div>
@@ -27,9 +28,6 @@
       </div>
     </div>
     
-    <script type="text/javascript">
-      var ply = {{ ply }};
-    </script>
     <script src="/tmplts"></script>
    
     <script src="http://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
