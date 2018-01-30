@@ -3,7 +3,7 @@ var router = express.Router();
 var fs = require('fs');
 var tmplts = {};
 var ply = {
-  link: 'login',
+  link: 'ply-login',
   name: 'plySheet',
   sheet: {},
   token: null,
