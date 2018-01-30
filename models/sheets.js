@@ -14,7 +14,7 @@ var script = {
 var sheetSchema = new mongoose.Schema({
     "name" : String,
     "link" : String,
-    "begin" : String,
+    "load" : String,
     "public" : String,
     "scripts": [script],
     "tmplts" : [script],
