@@ -2,6 +2,36 @@ var express = require('express');
 var router = express.Router();
 var fs = require('fs');
 var tmplts = {};
+var ply = {
+  link: 'login',
+  name: 'plySheet',
+  sheet: {
+    'ply-login': {
+      data: function() {
+        return {
+          username: '',
+          password: '',
+          ply: ply
+        };
+      },
+      methods: {
+        login: function() {
+          axios.post('/users', {username: this.username, password: this.password}).then(function(res){
+            console.log(res.data);
+          });
+        }
+      },
+      template: tmplts._login,
+      watch: {
+        'ply.name': function() {
+          console.log('changed to '+ply.name);
+        }
+      }     
+    }
+  },
+  token: null,
+  user: 'public'
+};
 
 /* GET tmplts. */
 router.get('/tmplts', function(req, res, next) {
@@ -22,7 +52,7 @@ router.get('/test', function(req, res){
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('index', { 
-    ply: JSON.stringify({name:"plysheet"})
+    ply: JSON.stringify(ply)
   });
 });
 
