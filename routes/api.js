@@ -14,8 +14,13 @@ router.get('/api',function(req, res) {
 
 collections.users.methods(['get', 'put', 'post', 'delete'])
 .before('post', function(req, res, next){
-  res.send('working now');
-  next();
+	collections.users.findOne({username: req.body.username}, function (err, data) {
+		if (!data) {
+			next();
+		} else {
+			return res.json({ success: false, message: 'Username already exists.' });
+		}
+	});
 })
 .register(router, '/users');
 
