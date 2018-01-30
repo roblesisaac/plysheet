@@ -28,7 +28,7 @@
     </div>
     
     <script type="text/javascript">
-      var ply = JSON.parse({{ ply }});
+      var ply = {{ ply }};
     </script>
     <script src="/tmplts"></script>
    
