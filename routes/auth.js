@@ -44,21 +44,6 @@ var loginUser = function(req, res) {
 	});
 };
 
-//newUSer
-router.post('/signUp', function(req, res) {
-	//Check if user collection is empty
-	users.findOne({username: req.body.username}, function (err, data) {
-		if (!data) {
-			var newUser = new users(req.body);
-			newUser.save(function(err) {
-				if (err) throw err;
-				loginUser(req, res);
-			});
-		} else {
-			res.json({ success: false, message: 'Username already exists.' });
-		}
-	});
-});
 //Login
 router.post('/authenticate', function(req, res) {
 	loginUser(req, res);
