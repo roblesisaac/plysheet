@@ -19,7 +19,6 @@
   </head>
 
   <body>
-    {{ ply }}
     <div id="app" class="off-canvas-wrapper">
       <div class="off-canvas position-right bgBleach" id="offCanvas" data-off-canvas>
       </div>
