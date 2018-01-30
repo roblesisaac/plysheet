@@ -16,7 +16,7 @@ router.get('/tmplts', function(req, res, next) {
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('index', { 
-    ply: JSON.stringify({name:"plysheet"});
+    ply: 'hello there';
   });
 });
 
