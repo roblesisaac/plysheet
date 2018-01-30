@@ -6,7 +6,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var lessMiddleware = require('less-middleware');
 var mongoose = require('mongoose');
-var methodOverride = require('method-override');
+var methodOverride = require('methods');
 
 var index = require('./routes/index');
 var api = require('./routes/api');
