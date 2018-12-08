@@ -46,6 +46,7 @@
     <script src="http://plysheet.com/plysheet/scripts/new"></script>
     
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.3/ace.js"></script>
+    <script src="https://js.braintreegateway.com/web/dropin/1.14.1/js/dropin.min.js"></script>
     
     <!--<script src="https://js.braintreegateway.com/web/3.11.1/js/client.min.js"></script>-->
     <!--<script src="https://js.braintreegateway.com/web/3.11.1/js/hosted-fields.min.js"></script>-->
